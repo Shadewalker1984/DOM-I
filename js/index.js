@@ -79,6 +79,7 @@ navBar2.append(nav2);
 
 const headline = document.querySelector(".cta-text h1");
 headline.innerHTML = siteContent["cta"]["h1"].split(" ").join("<br>");
+headline.style.padding = "5rem";
 
 
 let circleImg = document.querySelector('#cta-img');
