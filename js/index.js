@@ -44,13 +44,35 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let links = document.getElementsByTagName('a');
 links[0].textContent = siteContent.nav["nav-item-1"];
+links[0].style.color = "green";
 links[1].textContent = siteContent.nav["nav-item-2"];
+links[1].style.color = "green";
 links[2].textContent = siteContent.nav["nav-item-3"];
+links[2].style.color = "green";
 links[3].textContent = siteContent.nav["nav-item-4"];
+links[3].style.color = "green";
 links[4].textContent = siteContent.nav["nav-item-5"];
+links[4].style.color = "green";
 links[5].textContent = siteContent.nav["nav-item-6"];
+links[5].style.color = "green";
 
-let title = document.querySelector('.cta-text');
+let nav1 = document.createElement('a');
+nav1.textContent = "Login";
+nav1.style.color = 'green';
+let navBar1 = document.querySelector('nav');
+navBar1.prepend(nav1);
+
+let nav2 = document.createElement('a');
+nav2.textContent = "Logout";
+nav2.style.color = "green";
+let navBar2 = document.querySelector('nav');
+navBar2.append(nav2);
+
+
+
+
+
+let title = document.querySelector('.cta-text h1');
 title.innerHTML = siteContent.cta.h1;
 title.style.weight = "bold";
 
@@ -58,8 +80,8 @@ title.style.weight = "bold";
 let circleImg = document.querySelector('#cta-img');
 circleImg.setAttribute('src', siteContent['cta']['img-src']);
 
-// let btn = document.getElementsbyTagName("button");  
-// btn.innterHRML = siteContent.cta.button           ///
+let butt = document.querySelector("button"); 
+butt.textContent = "Get Started!";
 
 let feat4 = document.querySelectorAll(".top-content .text-content h4");
 feat4[0].textContent = siteContent["main-content"]["features-h4"];
