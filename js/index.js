@@ -72,9 +72,13 @@ navBar2.append(nav2);
 
 
 
-let title = document.querySelector('.cta-text h1');
-title.innerHTML = siteContent.cta.h1;
-title.style.weight = "bold";
+// let title = document.querySelector('.cta-text h1');
+// title.innerHTML = siteContent.cta.h1;
+// title.style.weight = "bold";
+
+
+const headline = document.querySelector(".cta-text h1");
+headline.innerHTML = siteContent["cta"]["h1"].split(" ").join("<br>");
 
 
 let circleImg = document.querySelector('#cta-img');
